@@ -1,0 +1,427 @@
+*{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+body{
+  padding-bottom:1000px ;
+}
+.App{
+  margin: 0;
+  display: flex;
+  box-sizing: border-box;
+}
+/*App us ki style (main-Component app)*/
+/*divided into three part 1(left->sidebar) 2(right->SuggestionBLock) 3(mid->Feed)*/
+.middle{
+  position: absolute;
+  top: 0;
+  left: 270px;
+  width: 620px;
+  height: auto;
+
+}
+.rightside{
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  width: 300px;
+  height: 500px;
+}
+/*      LeftSide    */
+.leftside{
+  
+  background-color: white;
+  border-right: 1px solid rgb(131, 127, 127);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  
+}
+.leftside-div{
+  display: flex;
+  flex-direction: column;
+
+}
+.Instagram-logo-div{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Instagram-logo{
+  width: 100px;
+}
+/*this is the part in which we are targeting second part after logo div*/
+.Instagram-sidebar-links{
+  height: 84vh;
+}
+/*this is the part in which we are dividing that second part (after the instagram logo div) middle one*/
+.Instagram-sidebar-links-mid{
+  height: 450px;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+.Instagram-sidebar-bottom{
+  height: 90px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+/*sidebar links*/
+.sidebar-links{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+/*SIDEBAR LINKS INSIDE*/
+.sidebar-link-inside{
+  width: 200px;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left:10px ;
+  border-radius: 5px;
+}
+.sidebar-link-inside:hover{
+  background-color: rgb(229, 217, 217);
+  cursor: pointer;
+}
+/*icons*/
+.sidebar-icons{
+  width: 30px;
+  height: 30px;
+}
+/*further components*/
+.reel-icon{
+  height: 22px;
+  width: 30px;
+}
+
+/*------------Rightside------*/
+/*-> RIGHSIDE_PROFILE*/
+.main-block-right{
+  display: flex;
+  height: 50px;
+ 
+  gap:3px;
+}
+/*left-block of RightSide Profile*/
+.left-block-right{
+  display: flex;
+  align-items: center;
+  margin-right: 9px;
+}
+.profilepic-right-main{
+  width: 40px;
+  height: 40px;
+}
+/*middle block of main block right RIGHTSIDE_PROFILE*/
+.middle-block-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.firstrow-right{
+ font-size: 14px;
+ font-weight: 600;
+}
+.secondrow-right{
+  font-size:12px;
+  color: rgb(82, 80, 80);
+  margin-top: 2px;
+}
+/*RIGHTSIDE_Profile ->main->RightBlock*/
+.right-block-right{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+}
+.right-block-right>li>a{
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color:blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*profileblockcomplete--!*/
+
+
+/* SUGGESTION Info Block*/
+.main-suggestioninfo{
+  margin-top: 20px;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.left-suggestioninfo{
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.right-suggestioninfo{
+  width: 60px; 
+}
+.right-suggestioninfo>a{
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 10px;
+  color:black
+}
+
+.Suggestions-Profile{
+  margin-bottom: 0;
+}
+.Main-Suggestion{
+  height:250px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding-top: 10px;
+  margin-top:10px; 
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+/*.Right-Links*/
+.Right-Links{
+  width:100%;
+}
+.Right-Links>ul{
+  width:260px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 20px;
+}
+.Right-Links>ul>li{
+  color: grey;
+  font-size: 12px;
+  
+  text-decoration: dotted;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Right-Links>ul>li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*------FOOTER RIGHT------*/
+.Footer-right{
+  color:rgb(105, 102, 102);
+  font-size: 12px;
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/*============= MiddleSide =============  */
+
+/*  -> this css is for MAIN MIDDLE SIDE*/
+
+/*Middle.jsx*/
+.main-middleside-div{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+  align-items: center;
+}
+.Header-middle-main{
+  margin-top: 20px; 
+  width: 100%;
+  height: 160px;
+  display: flex;
+  gap: 25px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(23, 43, 122);
+  scrollbar-width: thin;
+}
+
+
+/*middle-side-components-> header-middle.jsx*/
+.story-header{
+  width: 100px;
+ height: 100%;
+}
+.story-picture-mid{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+}
+.story-dp{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(162, 255, 233);
+}
+.story-username{
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Body Middle Main   (middle->Body(POSTS))*/
+.Body-middle-main{
+  width: 80%;
+  height: auto;
+}
+
+
+
+/*
+  POSTBODY->middle-side-comp->POST-MIDDLE
+*/
+/*POSTMIDDLE*/
+.Main-Post-Block{
+  width: 100%;
+  height: 750px;
+  margin-bottom: 26px;
+}
+.Header-Post{
+  width: 100%;
+  height: 60px;
+  display: flex;
+
+}
+.Post-left-block-h{
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.Post-middle-block-h{
+  width: 350px;
+}
+.Post-right-block-h{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*POST HEADER*/
+.Post-profile-pic{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.Post-middle-block-h{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+}
+.Post-username{
+  font-weight: bold;
+  color: black;
+  font-size: 13px;
+}
+.Post-user-location{
+  color: rgb(114, 102, 102);
+  font-size: 12px;
+  font-weight: bold;
+}
+.Post-username>span{
+  color: rgb(95, 87, 87);
+  font-weight: 400;
+  font-size: 14px;
+  margin-left:10px ;
+}
+.Post-username>span>span{
+  font-size: 16px;
+  font-weight: bolder;
+  
+}
+.Post-menu{
+  height: 15px;
+  width: 15px;
+}
+/*main-middle-post*/
+.main-middle-post{
+  height: 75%;
+  border-radius: 12px;
+  background-color: rgb(203, 230, 253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.instagram-post-logo{
+  height: 50px;
+  width: 50px;
+
+}
+.Post-icon-div
+{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.left-side-icon{
+  display: flex;
+  align-items: center;
+  width: 140px;
+  justify-content: space-around;
+}
+.icon-post{
+  height: 30px;
+  width: 30px;
+  color:black;
+}
+.icon-post1{
+  width: 35px;
+  height: 35px;
+}
+.icon-post-save{
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+.Post-info-div{
+  width: 95%;
+  margin-left: 10px ;
+  height: 6%;
+  margin-bottom: 18px;
+}
+.Post-info-div>span{
+  font-size: 14px; 
+  color: black;
+  font-weight: bold;
+  margin-right: 4px;
+  
+}
+.Post-translation-div{
+  color: rgb(54, 46, 46);
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+}
