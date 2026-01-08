@@ -1,6 +1,5 @@
 import './App.css';
 import MiddleExplore from './Components/Explore/middle-explore';
-
 import Leftside from "./Components/Home/leftside";
 import  MiddleSide from "./Components/Home/middle";
 import Rightside from "./Components/Home/rightside";
@@ -10,74 +9,89 @@ import './Components/Profile/profilePage.css';
 import Profile from '../src/assets/profile.svg';
 import ProfilePage from './Components/Profile/profilePage';
 import LoginPage from './Components/Login/login';
+import { createBrowserRouter , RouterProvider } from 'react-router-dom';
+import Register from './Components/Register/register';
+
 function App(){
+    const router=createBrowserRouter([
+      
+    {
+      path:"/Login",
+      element:<><div className="leftside">
+                 <Leftside/>
+                </div>
+                <div className="middle">
+                  <MiddleSide />
+                </div>
+                <div className="rightside">
+                  <Rightside />
+                </div>
+          
+              </>
+    },
+    {
+      path:"/",
+      element:<>
+               <LoginPage/>
+              </>
+    },
+    {
+      path:"/home",
+      element:<>
+                <div className="leftside">
+                 <Leftside/>
+                </div>
+                <div className="middle">
+                  <MiddleSide />
+                </div>
+                <div className="rightside">
+                  <Rightside />
+                </div>
+              </>
+    },
+    {
+      path:"/Explore",
+      element:<>
+                <div className="leftside">
+                  <Leftside/>
+                </div>
+                <div className='middle'>
+                 <MiddleExplore/>
+                </div>
+                <div className="rightside">
+                  Explore  
+                </div>
+                
+              </>
+    },
+    {
+      path:"/Profile",
+      element:<>
+                  <div className="leftside">
+                    <Leftside/>
+                  </div>
+                  <ProfilePage/>
+                  
+              </>
+    },{
+      path:"/Register",
+      element:<>
+                <Register />
+              </>
+    }
+
+   ])
   return(
-   
+ 
     
-    
-  <div className="App">
+    <div className="App">
+       <>
+        <RouterProvider router={router} />
+       </>
 
-     {/**     INSTRUCTIONS  
-      * Sir i have partitioned every page with comments
-      * You are requestion to just remove comments from blocks one by one
-      * BY DEFAULT EXECUTION is LOGIN PAGE
-      * first block -> Login page 
-      * second block -> comment component call of LoginPage and remove comment from Home block
-      * thirdblock-> comment home execution and remove comments from Explore page
-      * fourthblock-> comment home execution and remove comments from Profile page
-      
-      */}
-        
-         <LoginPage/>
-  
-     
-     {/** Remove Comments To Exectute */}
-
-      
-     {/** ---------------- Home Execution      
-        <div className="leftside">
-          <Leftside/>
-        </div>
-        <div className="middle">
-          <MiddleSide />
-        </div>
-        <div className="rightside">
-         <Rightside />
-        </div>
-      */}
-
-      
-      {/** -----------------Explore Execution
-         
-        <div className="leftside">
-          <Leftside/>
-        </div>
-        <div className='middle'>
-          <MiddleExplore/>
-        </div>
-        <div className="rightside">
-          Explore  
-        </div>
-      
-         * 
-         * 
-         * 
-         */}
-
-
-    {/** ----------------------Profile Page
-       *<div className="leftside">
-          <Leftside/>
-        </div>
-        <ProfilePage/>
-     * 
-     */}   
-      
         
     </div>
     
   );      
-   
 }
-
-export default App;
+export default App

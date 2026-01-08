@@ -1,71 +1,109 @@
-.Login-Page-Main{
+.main-login-block{
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: aliceblue;
+  justify-content: space-around;
 }
-.Login-Page-Block{
-  padding: 40px;
-  border-radius: 30px;
-  width: 600px;
-  height: 450px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,1);
-}
-.logo-div{
-  width: 100%;
-  height: 80px;
+.Login-page{
+  width: 70%;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.Login-insta-logo{
-  height: 70px;
-  width: 180px;
 
 }
-.input-section{
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- justify-content: center;
-  gap: 20px;
+.left-section-login{
+  width: 60%;
 }
 
-.input{
-  width: 400px;
-  height: 30px;
-  margin-left: 10px;
-  padding-left: 20px;
-  font-size: 15px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 3px inset rgba(0,0,0,0.5);
-  border: none;
+.Landingimg{
+  width: 500px;
+  margin-top: 100px;
+  
 }
-.input:focus{
-  border: 1px solid  rgba(183, 142, 250, 0.5);
-  outline: none;
+
+.right-section-login{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.button-div{
+.Login-Block{
+  width: 260px;
+  height: 500px;
+}
+.Logo-Div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
   width: 100%;
+}
+.instagram-logo{
+  width: 150px;
   height: 50px;
-  text-align:center;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
 }
-.button-div button{
-  width: 100px;
+.input-div{
+  width: 100%;
+  height: 45px;
+  margin: auto;
+}
+.inputbar{
+  width: 97%;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 40px;
-  background-color: rgb(65, 65, 237);
+  background-color: rgb(221, 221, 221);
+  outline: none;
   border: none;
-  border-radius: 15px;
-  color: aliceblue;
+  color: rgb(2, 2, 2);
+  border-radius: 4px;
 }
-.register-div{
+.login-btn-div{
+  width: 100%;
+  height: 45px;
+}
+.login-btn{
+  width: 105%;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(64, 64, 243);
+  color: white;
+  font-weight: bold;
+}
+.login-btn:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.or-div{
+  height: 40px;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  position: relative;
+  color: rgb(138, 135, 135);
+}
+.OR{
+  position: absolute;
+  top: 16px;
+  padding: 2px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(88, 88, 88);
+}
+.Account{
+  font-size: 14px;
   text-align: center;
+  color: rgb(78, 76, 76);
+  margin-top: 20px;
+}
+
+.Signup{
+  font-weight: bold;
+  color: rgb(58, 58, 236);
+  margin-left: 5px;
+  
+}
+.Signup:hover{
   text-decoration: underline;
-  color: blue;
+  cursor: pointer;
 }

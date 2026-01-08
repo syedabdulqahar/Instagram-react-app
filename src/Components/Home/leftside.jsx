@@ -12,7 +12,7 @@ import More from '../../assets/more.svg';
 import Meta from '../../assets/Meta.svg';
 import '../../Components/Home/leftside-links.css';
 import LoginPage from '../Login/login';
-
+import { Link } from 'react-router-dom';
 
 function Leftside(){
   return(
@@ -26,12 +26,16 @@ function Leftside(){
           {/*this is Middle part of instagram sidebar */}
           <div className="Instagram-sidebar-links-mid">
             <div className="sidebar-links">
-              <a href="../../App.jsx">
-              <div className="sidebar-link-inside">
-                <img className='sidebar-icons' src={Home}alt="" />
-                Home
-              </div>
-              </a>
+                <Link to="/Home">
+                <div className="sidebar-link-inside">
+                  
+                  <img className='sidebar-icons' src={Home}alt="" />
+                  Home
+                  
+                </div>
+                </Link>
+             
+              
             </div>
             <div className="sidebar-links">
               <div className="sidebar-link-inside">
@@ -40,10 +44,14 @@ function Leftside(){
               </div>
             </div>
             <div className="sidebar-links">
+               <Link to="/Explore">
               <div className="sidebar-link-inside">
                <img className='sidebar-icons' src={Explore} alt="" />
                Explore
+             
               </div>
+                </Link>
+              
             </div>
             <div className="sidebar-links">
               <div className="sidebar-link-inside">
@@ -70,10 +78,15 @@ function Leftside(){
               </div>
             </div>
             <div className="sidebar-links">
+                
+              <Link to="/Profile">
               <div className="sidebar-link-inside">
                <img className='sidebar-icons' src={Profile} alt="" />
                 Profile
+                
               </div>
+               </Link>           
+              
             </div>
           </div>
           {/*this is last part of instagram sidebar */}
