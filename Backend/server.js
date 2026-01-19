@@ -21,7 +21,7 @@ db.connect((err) => {
 });
 
 // ===== REGISTER ROUTE =====
-app.post("/register", async (req, res) => {
+app.post("/Register", async (req, res) => {
   const { email, password } = req.body;
 
   // Check agar user pehle se register hai
