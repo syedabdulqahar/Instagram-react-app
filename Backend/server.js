@@ -21,7 +21,7 @@ db.connect((err) => {
 });
 
 // ===== REGISTER ROUTE =====
-app.post("/Register", async (req, res) => {
+app.post("/register", async (req, res) => {
   const { email, password } = req.body;
 
   // Check agar user pehle se register hai
@@ -64,11 +64,10 @@ app.post("/login", (req, res) => {
 
       const user = result[0];
       const match = await bcrypt.compare(password, user.password);
-
       if (match) {
         res.send("Login successful"); // constraint 3
       } else {
-        res.send("Password galat hai"); // wrong password alert
+        res.send("Please enter correct credentials"); // wrong password alert
       }
     },
   );
