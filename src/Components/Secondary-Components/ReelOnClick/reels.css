@@ -1,0 +1,101 @@
+.Main-Reels-Block{
+  height: 95vh;
+  margin-top: 20px;
+  position: fixed;
+  left:30%;
+  width:450px;
+  display: flex;
+
+}
+.video-block{
+  width: 85%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.content-maker-info{
+  position: fixed;
+  bottom: 20px;
+  color: white;
+
+}
+.first-block{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  gap: 10px;
+  width: 200px;
+}
+picture{
+  width: 40px;
+}
+.content-maker{
+  flex: 1;
+  font-size: 15px;
+  font-weight: bold;
+}
+.picture{
+  width: 50px;
+  height: 50px;
+}
+.Follow-btn{
+  border:0.1px solid white;
+  width: 60px;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: transparent;
+}
+
+/* content make info -> second block*/
+
+.second-block{
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 20px;
+}
+.second-block span{
+  color: lightgray;
+  font-size: 12px;
+}
+/*third block*/
+.third-block{
+  width: 240px;
+  padding: 8px 10px 8px 10px;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 12px;
+  background: rgba(128, 128, 128, 0.4);
+  backdrop-filter: blur(100px);
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/*action block*/
+.action-block{
+  width: 15%;
+  margin-top: 55%;
+  height: 400px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.reels-icons{
+  width: 30px;
+  height: 30px;
+}
+.reels-icons-save{
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,122 @@
+.Main_Register_div{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+ justify-content: space-around; 
+}
+.Register-Block{
+  width: 600px;
+  padding-top: 20px;
+}
+.arrow-div{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.backicon{
+  width: 30px;
+  height: 30px;
+  transition: 0.14s;
+}
+.backicon:hover{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.Meta-div{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size:18px;
+  gap: 5px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.metaicon{
+  width: 20px;
+  height: 20px;
+}
+h2{
+  font-weight: 700;
+  color: black;
+  font-size: 25px;
+}
+h4{
+  font-weight: 600;
+  color: black;
+  
+}
+.header-div h2{
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header-div h4{
+  font-size: 20px;
+  color: rgb(79, 77, 77);
+}
+.input-divs{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.emailhead{
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.inputbar-register{
+  width: 100%;
+  height: 60px;
+  font-size: 17px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: none;
+  outline: rgb(54, 53, 53);
+  padding-left: 10px;
+  margin: auto;
+  background-color:lightgrey;
+  color: black;
+  margin-bottom: 10px;
+}
+.inputbar:hover{
+border: 1px solid rgb(107, 100, 100);
+cursor: pointer;
+}
+h4 span{
+  font-weight: bold;
+  color: rgb(69, 69, 240);
+  cursor: pointer;
+}
+h4 span:hover{
+  text-decoration: underline;
+}
+.emailinfo{
+  margin-bottom: 10px;
+}
+.button-div{
+  width: 99%;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 20px;
+ 
+}
+.button-div button{
+  width: 100%;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(104, 104, 248);
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+   transition: 0.5s;
+}
+.button-div button:hover{
+  cursor: pointer;
+ background-color: black;
+ 
+}

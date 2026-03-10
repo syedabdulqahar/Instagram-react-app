@@ -20,8 +20,8 @@
   justify-content: center;
   align-items: center;
 }.profile-pic{
-  height: 150px;
- width: 150px;
+  height: 200px;
+ width: 200px;
 }
 
 .profile-data{
@@ -78,8 +78,13 @@
   width: 300px;
   border-radius: 10px;
   font-weight: 600;
-  background-color: rgb(219, 218, 218);
+  color: white;
+  background-color: rgb(6, 73, 180);
   border: none;
+}
+.profile-button-div .Archive{
+  background-color: lightgrey;
+  color: black;
 }
 .profile-button-div>button:hover{
   opacity: 0.9;

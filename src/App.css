@@ -8,9 +8,6 @@ html
 {
   scroll-behavior: smooth;
 }
-body{
-  padding-bottom:1000px ;
-}
 .App{
   margin: 0;
   display: flex;
@@ -36,7 +33,7 @@ body{
 /*      LeftSide    */
 .leftside{
   
-  background-color: white;
+  background-color: rgb(255,255,255);
   border-right: 1px solid rgb(131, 127, 127);
   height: 100vh;
   position: fixed;
@@ -253,10 +250,10 @@ body{
 }
 .Header-middle-main{
   margin-top: 20px; 
-  width: 100%;
+  width: 80%;
   height: 160px;
   display: flex;
-  gap: 25px;
+  gap: 10px;
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-behavior: smooth;
@@ -267,24 +264,29 @@ body{
 
 /*middle-side-components-> header-middle.jsx*/
 .story-header{
-  width: 100px;
+  width: 120px;
  height: 100%;
 }
 .story-picture-mid{
-  width: 100%;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   display: flex;
   justify-content: center;
 }
 .story-dp{
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
   border-radius: 50%;
-  background-color: rgb(162, 255, 233);
+  transition: 0.2s;
+}
+.story-dp:hover{
+  cursor: pointer;
+  box-shadow: inset 0px 0px 10px rgb(181, 150, 150);
 }
 .story-username{
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 1px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -368,7 +370,10 @@ body{
 .main-middle-post{
   height: 75%;
   border-radius: 12px;
-  background-color: rgb(203, 230, 253);
+  background: #fafafa;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  border: #dbdbdb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,4 +429,13 @@ body{
   font-size: 12px;
   font-weight: bold;
   margin-left: 10px;
+}
+
+/** => Responsiveness*/
+
+@media (max-width:1200px){
+  .rightside{
+    opacity: 0;
+  }
+
 }

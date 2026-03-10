@@ -1,0 +1,54 @@
+.main-message-bar{
+  position: fixed;
+  bottom: 40px;
+  right:30px;
+  width: 250px;
+  height: 60px;
+  border-radius: 35px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  border-color: rgb(234, 228, 228);
+  z-index: 100;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  transition: 0.15s
+}
+.main-message-bar:hover{
+  background-color: lightgray;
+  cursor: pointer;
+
+}
+.sendButton{
+  width: 25px;
+  height: 25px;
+}
+.send-mid-block{
+  width: 80px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.send-right-block{
+  width: 80px;
+}
+.profileButton,
+.profileButton1,
+.profileButton2{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+}
+.profileButton1,
+.profileButton2{
+  background-color: beige;
+}
+.profileButton1,
+.profileButton2{
+  margin-left: -6px;
+}
+@media(max-width:1200px){
+  .main-message-bar{
+    opacity: 0;
+  }
+}
